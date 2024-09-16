@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach - Popular Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_page.css">
+</head>
+
+<body>
+    <nav id="nav_bar" class="nav_white">
+        <img src="images/logo-red.png" alt="Logo" class="logo">
+        <ul class="nav_links">
+            <li><a href="home.html" class="active" id="nav_l_1">Popular Places</a></li>
+            <li><a href="listing.html" id="nav_l_1">Travel Outside</a></li>
+            <li><a href="house.html" id="nav_l_1">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register_btn">Register Now</a>
+        <i class="fa-solid fa-bars house_toggle" onclick="toggle_menu()"></i>
+    </nav>
+
+    <!----------------House Details----------------->
+
+    <div class="house_details">
+        <div class="house_title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>240 Riviews</span>
+                </div>
+                <div>
+                    <p>Location: San Francisco, California, United State</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery_img_1"><img src="images/house-1.png"></div>
+            <div><img src="images/house-2.png"></div>
+            <div><img src="images/house-3.png"></div>
+            <div><img src="images/house-4.png"></div>
+            <div><img src="images/house-5.png"></div>
+        </div>
+        <div class="small_details">
+            <h2>Entier rental unit hosted by brandon</h2>
+            <p>2 Guest &nbsp; &nbsp; 2 Bed &nbsp; &nbsp; 1 Bathroom</p>
+            <h4>$100 <Span>/ day</Span></h4>
+        </div>
+        <hr class="line">
+        <form action="" class="check_form">
+            <div>
+                <label>Check In</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div>
+                <label>Check Out</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div>
+                <label>Guest 2</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <ul class="details_list">
+            <li><i class="fa-solid fa-house"></i>Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class="fa-solid fa-broom"></i>Enhanced Clean
+                <span>This host has comitted to staybnb's cleanning process.</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i> Great Location
+                <span>90% of recent guests gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Great Check-in Experiance
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+        <p class="home_dsc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum eos, vero ratione at
+            labore rerum ab blanditiis, delectus veniam cumque voluptatum inventore beatae! Corrupti quae qui error
+            ducimus vitae vel quia voluptas suscipit doloribus accusamus placeat laborum labore vero facilis corporis
+            autem, rerum dolor facere quasi eaque, obcaecati iste quo eos! Harum molestias libero commodi ea totam
+            voluptatibus labore.</p>
+
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7373.301192335604!2d88.36649593578285!3d22.479760781877076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02711ceded6fb9%3A0x85532a869967cb1a!2sGanguly%20Bagan%2C%20Kolkata%2C%20West%20Bengal%20700047!5e0!3m2!1sen!2sin!4v1696233606668!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>San Francisco, California, United States</b>
+            <p>It's like a home awaya form home</p>
+        </div>
+        <hr class="line">
+        <div class="riview_customer">
+            <img src="images/host.png">
+            <div class="perent_rating">
+                <h3>Hosted by Brandon</h3>
+                <div class="rating_comment">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>245 reviews &nbsp; &nbsp; Responce rate 100% &nbsp; &nbsp; Responce Time: 60 min</p>
+                </div>
+                <button>Contact Host</button>
+
+            </div>
+        </div>
+        <!---------------Footer------------->
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2023, Bleach - Best Travel Website </footer>
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-------------Togglr Menu JS------------>
+
+    <script>
+        var nav_bar = document.getElementById('nav_bar');
+
+        function toggle_menu() {
+            if (nav_bar.style.maxHeight == '300px') {
+                nav_bar.style.maxHeight = "100px"
+            }
+            else {
+                nav_bar.style.maxHeight = "300px"
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
