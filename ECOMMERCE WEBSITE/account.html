@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore | Ecommerce Wbsite Design</title>
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png" width="100px" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul id="menuItem">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="producs.html">Products</a></li>
+                    <li><a href="product-details.html">About</a></li>
+                    <li><a href="cart.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="" width="25px" height="25px" class="shopNow"></a>
+            <img src="images/menu.png" alt="" width="25px" height="25px" class="menu_icon" onclick="menuToggle()">
+        </div>
+    </section>
+
+    <!----------------Cart item Details---------------->
+    <section class="account_page">
+        <div class="container">
+            <div class="row">
+                <div class="col_2">
+                    <img src="images/image1.png" alt="">
+                </div>
+                <div class="col_2">
+                    <div class="form_container">
+                        <div class="form_btn">
+                            <span onclick="login()" id="login_indicator">Login</span>
+                            <span onclick="register()" id="register_indicator">Register</span>
+                        </div>
+
+                        <form id="login_form">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="register_form">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email Id">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!------------Footer------------>
+    <section class="footer">
+        <div class="container">
+            <div class="row_footer">
+                <div class="footer_col_1">
+                    <h3>Downlode Our App</h3>
+                    <p>Downlode App For Android and ios mobile phone</p>
+                    <div class="app_logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer_col_2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor non illum dignissimos.
+                        Maxime, temporibus voluptas.</p>
+                </div>
+                <div class="footer_col_3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer_col_3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyRight">Cpyright 2023 - Easy Tutorials</p>
+    </section>
+
+    <!--------------- Js for ToggleMenu ----------------->
+    <script>
+        var menuItem = document.getElementById("menuItem");
+        menuItem.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menuItem.style.maxHeight == "0px") {
+                menuItem.style.maxHeight = "200px"
+            }
+            else {
+                menuItem.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!--------------- Js for ToggleMenu ----------------->
+    <script>
+        var login_form = document.getElementById("login_form");
+        var register_form = document.getElementById("register_form");
+        var login_indicator = document.getElementById("login_indicator");
+        var register_indicator = document.getElementById("register_indicator");
+
+        function register() {
+            register_form.style.left = "0px";
+            login_form.style.left = "-300px";
+            register_indicator.style.backgroundColor = "rgb(252, 95, 43)";
+            login_indicator.style.backgroundColor = "white";
+            register_indicator.style.color = "white";
+            login_indicator.style.color = "rgb(252, 95, 43)";
+        }
+        function login() {
+            register_form.style.left = "300px";
+            login_form.style.left = "0px";
+            login_indicator.style.backgroundColor = "rgb(252, 95, 43)";
+            register_indicator.style.backgroundColor = "white";
+            login_indicator.style.color = "white";
+            register_indicator.style.color = "rgb(252, 95, 43)";
+        }
+    </script>
+</body>
+
+</html>
