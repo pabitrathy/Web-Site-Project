@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/ecd8605aca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <H1 class="logo"><span>P</span>rabal.</H1>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closelink()">Home</a></li>
+                    <li><a href="#about" onclick="closelink()">About</a></li>
+                    <li><a href="#service" onclick="closelink()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closelink()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closelink()">Contact</a></li>
+                    <i class="fa-solid fa-xmark close" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menu" onclick="openMenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p>Data Scientist/Data Engineer</p>
+                <h1>Hi, I'm <span>Prabal</span><br>Tripathy Form INDIA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row row1">
+                <div class="about_col_1">
+                    <img src="images/prabalPic6.jpg" alt="Votu Image">
+                    <div class="votu_design">
+                        <h3>Hello</h3>
+                        <p>I'm Prabal <br> Nice to meet you all guys</p>
+                    </div>
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>I did my master's in computer science. I have a strong background in Data Engineering and Data
+                        Science having more than 3 years of experience. I am experienced in Python, pandas, matplotlib,
+                        spark, Apache Airflow, R, Power BI, Tableau, and ELK stack. I have experience in building data
+                        pipelines. I have experience in managing big projects. I have strong knowledge of machine
+                        learning and deep learning. I am experienced in Azure, GCP, and AWS.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="skills()" id="skillAfter">Skills</p>
+                        <p class="tab_links" onclick="experience()" id="experienceAfter">Experience</p>
+                        <p class="tab_links" onclick="education()" id="educationAfter">Education</p>
+                    </div>
+                    <div class="tab_content active_content" id="skillsTab">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="experienceTab">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design Tranning at J.U</li>
+                            <li><span>2021 - 2023</span><br>Team lead at Star App LLC.</li>
+                            <li><span>2019 - 2021</span><br>UI/UX Design Executive at Coin Degital Ltd.</li>
+                            <li><span>2017 - 2019</span><br>Intership at eKart eCommers</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="educationTab">
+                        <ul>
+                            <li><span>2020</span><br>ME(CSE) at Jadavpur University</li>
+                            <li><span>2018</span><br>B.Tech(CSE) Form Govt. college of Engineering and leather Technology</li>
+                            <li><span>2014</span><br>Intermediate Form Namkhana Union High School(WBCHSE)</li>
+                            <li><span>2012</span><br>Matriculation Form Namkhana Union High School(WBBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Service--------------->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub_title">My Service</h1>
+            <div class="service_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus excepturi dolore
+                        labore eaque est.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus excepturi dolore
+                        labore eaque est.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus excepturi dolore
+                        labore eaque est.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------Portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti!</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti!</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti!</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p class="mail"><i class="fa-solid fa-paper-plane"></i>sougatap1996@gmail.com</p>
+                    <p class="num"><i class="fa-solid fa-phone"></i>7063196278</p>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/login?lang=en" target="_blank"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv_prabal.pdf" download class="btn btn2">Downlode CV</a>
+                </div>
+
+                <div class="contact_right">
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>Copyright &#xa9; Prabal <i class="fa-solid fa-heart"></i> You all</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+        function closelink() {
+            sideMenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        var skillAfter = document.getElementById("skillAfter");
+        var experienceAfter = document.getElementById("experienceAfter");
+        var educationAfter = document.getElementById("educationAfter");
+
+        var skillsTab = document.getElementById("skillsTab");
+        var experienceTab = document.getElementById("experienceTab");
+        var educationTab = document.getElementById("educationTab");
+
+        function skills() {
+            if (skillsTab.style.display = "block") {
+                experienceTab.style.display = "none";
+                educationTab.style.display = "none";
+            }
+        }
+        function experience() {
+            if (experienceTab.style.display = "block") {
+                skillsTab.style.display = "none";
+                educationTab.style.display = "none";
+
+            }
+        }
+        function education() {
+            if (educationTab.style.display = "block") {
+                skillsTab.style.display = "none"
+                experienceTab.style.display = "none";
+
+            }
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
