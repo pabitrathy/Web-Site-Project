@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* head section */
+
+#top1 {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* justify-content: right; */
+
+}
+
+#top1::before {
+    position: absolute;
+    content: "";
+    background: rgb(77, 135, 156,0.7);
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: .35; */
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    opacity: 100;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 50px; */
+}
+
+.list div {
+    list-style: none;
+    margin: 2px 16px;
+    cursor: pointer;
+}
+
+.a1 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.a1:hover {
+    border-radius: 19px;
+    color: rgb(255, 0, 0);
+}
+
+.a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.a:hover {
+    background: red;
+    color: rgb(255, 255, 255);
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 90px 100px;
+    margin: auto;
+}
+
+#home h1 {
+    color: white;
+    font-size: 35px;
+    font-family: Arial Black;
+    margin: 14px;
+}
+
+#home p {
+    color: white;
+}
+
+.button {
+    position: relative;
+    margin-top: 27px;
+    color: white;
+    background: rgb(60 57 57);
+    border: 2px solid rgb(60 57 57);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    opacity: 0.7;
+    font-family: Copperplate Gothic Light;
+}
+
+.button:hover {
+    background: red;
+    border: 2px solid red;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('image5/pic1.jpg')no-repeat center center/cover;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* OUR SERVICES */
+
+
+#service1 {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+
+}
+
+#service1 h1 {
+    margin: 5px auto;
+}
+
+#service2 {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    padding: 10px 20px 0px 60px;
+    z-index: -1;
+
+    /* border: 2px solid red; */
+
+}
+
+.servicebody {
+    border: 2px solid rgb(255, 255, 255);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin: 30px 40px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    /* background: rgb(245, 245, 245); */
+    box-shadow: 10px 10px 20px;
+}
+
+.servicebody img {
+    width: 140px;
+    height: 90px;
+}
+
+.servicebody h2 {
+    font-family: Stencil;
+    margin: 12px auto;
+}
+
+#ourclint {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    /* border: 2px solid green; */
+}
+
+#ourclint::before {
+    content: "";
+    position: absolute;
+    /* top: 0px;
+    left: 100px; */
+    background: url(image5/contuct.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#ourclint div {
+    /* margin-top: 25px;
+    margin-left: 55px; */
+}
+
+#ourclint div img {
+    width: 150px;
+    height: 130px;
+}
+
+.clint {
+    /* border: 2px solid red; */
+    margin: 0px auto;
+    padding-top: 40px;
+    font-size: 70px;
+    font-family: Impact;
+    color: rgb(18, 58, 118);
+}
+
+.clint1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    
+    /* border: 2px solid green; */
+}
+
+
+/* contuct*/
+#contuct {
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+#contuct::before {
+    content: "";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-image:linear-gradient(rgb(110, 113, 110,.7),rgb(110, 113, 110,.7)),url(image5/footer.webp);
+    width: 100%;
+    height: 590px;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+.contuctus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    font-family: Stencil;
+    z-index: 1;
+}
+#contuctbox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    /* z-index: 11; */
+}
+#contuctbox .form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+#contuctbox input{
+    width: 28.4rem;
+    height: 2rem;
+}
+#contuctbox input,
+#contuctbox textarea{
+    border-radius: 4px;
+    border: 0px;
+}
+footer{
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: 115px;
+    height: 70px;
+}
+::placeholder{
+    font-family: Comic Sans MS;
+}
+#contuctbox label{
+    font-family: Cascadia Code;
+}
