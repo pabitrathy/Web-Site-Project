@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="University_Website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub_header">
+        <nav>
+            <a href="University_Website.html" class="img"><img src="images/logo.png" alt=""></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About_us.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" id="menuBar"></i>
+        </nav>
+        <h1>Contuct Us</h1>
+    </section>
+
+    <!----------- Contuct Us ------------>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7373.211135986141!2d88.38060898578306!3d22.481451881751333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02716e073eddf7%3A0xc6e9c4fe3d394458!2sBaghajatin%20Place%2C%20Tal%20Pukar%2C%20Baghajatin%20Colony%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1693620137080!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact_us">
+        <div class="row">
+            <div class="contact_col">
+                <div>
+                    <i class="fa-solid fa-house contact_btn"></i>
+                    <span>
+                        <h5>XYZ Road ,ABC Building</h5>
+                        <p> WestBengal,Kolkata,IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone contact_btn"></i>
+                    <span>
+                        <h5>+91 7501987628</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope contact_btn"></i>
+                    <span>
+                        <h5>pabitratripathy40@Gmail.com</h5>
+                        <p>Email us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact_col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Email Address">
+                    <input type="text" placeholder="Enter Your Subject">
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button class="hero_btn about_btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-----------Footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ducimus eligendi blanditiis dolorem quisquam.
+            Quibusdam corporis consequatur optio!<br> Alias aspernatur sed accusamus eum molestiae quis nulla odit unde
+            officia corporis!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa-regular fa-heart"></i> By Easy Tutorial</p>
+    </section>
+
+
+
+
+
+    <!------- JavaScript for Toggle Menu ------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
